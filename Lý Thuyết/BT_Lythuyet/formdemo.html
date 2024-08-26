@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <style>
+            #b1,#b2,#b3{
+                background-color: bisque;
+                width: 100px;
+                border: 1px dashed black;
+                border-radius: 10px;
+                box-shadow: 4px 4px 3px yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="">Họ: </label>
+            <input type="text" name="txtho" id="txtho" size="30" > <br> <br>
+            <label for="">Tên: </label>
+            <input type="text" name="txtT" id="txtT"> <br>
+            <label for="">Giới tính: </label>
+            <select name="select" id="select">
+                <option value="1">Nam</option>
+                <option value="2">Nữ</option>   
+            </select>
+            <br>
+            <label for="">Chọn hình thức học: </label>
+            <input type="radio" name="ra" id="ra"> Học online <br>
+            <input type="radio" name="ra" id="ra"> Học offline <br>
+            <br>
+            <label for="">Chọn môn học: </label>
+            <input type="checkbox" name="checkbox" id="ch"> Toán <br>
+            <input type="checkbox" name="checkbox" id="ch"> Lý <br>
+            <input type="checkbox" name="checkbox" id="ch"> Hóa <br>
+            <br>
+            <label for="">Comment</label>
+            <textarea name="txtarea" id="txtarea" cols="30" rows="10" ></textarea> <br>
+            <button type="button" id="b3">Button</button>
+            <br> <br>
+            <input type="button" value="Buttonnnnn" id="b1">
+            <br> <br>
+            <button type="reset" id="b2">Cancel</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+<!-- cách bấm nhanh: html:5 -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- description: mô tả của trang web -->
+        <meta name="description" content="Bài tập 1A">
+        <!-- Keywords: giúp cho những từ khóa hiển thị ở đầu trang google -->
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <title>BAITAP1A</title>
+        <style>
+            p{
+                /* độ rộng */
+                width: 400px ;
+                /* đóng khung 4 phía với độ dày 1 px size solid màu nâu*/
+                border: 1px solid brown;
+                /* khoảng cách giữa khung và màn hình */
+                margin-left: 30px; /* khung cách trái màn hình 30px*/
+                /* chữ cách khung 10px */
+                padding: 10px;
+                /* canh khoảng cách của chữ */
+                text-align: justify;
+                /* Màu chữ */
+                color: rgba(0, 0, 0, 0.7);
+                /* Kích thước chữ */
+                font-size: medium;
+                /* màu chữ */
+                color: #fff;
+
+            }
+            #hinh1{
+                width: auto;
+                height: auto;
+                margin: 10px;
+                border: 2px solid rgba(0, 0, 0, 0.7);
+                /* bo tròn 10px */
+                border-radius: 10px;
+                /*Bóng ngã ở phía sau*/
+                box-shadow: 4px 4px 3px rgb(212, 212, 201) ;
+            }
+            body{
+                background-image: url(../IMAGES/hinh-nen-may-tinh-1-696x464.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            div{
+                width: 50%;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: #fff;
+                border-radius: 10px;
+            }
+            span{
+                font-size: 25px;
+                color: aquamarine;
+                /*Độ bóng chữ*/
+                text-shadow: 4px 4px 3px green;
+            }
+        </style>
+        
+    </head>
+    <body bgcolor="pink" text="greyy" size="6" >
+    <!-- CÁC THẺ CƠ BẢN, &nbsp là khoảng trắng -->
+        <center><h1>Tên tao là &nbsp long</h1></center>
+        <h2>Tao là long đại ca</h2>
+        <h3>Long đại ca là tao</h3>
+        <h4>M là ai</h4>
+        <h5>Đại ca là ai</h5>
+        <h6>Long là ai</h6>
+       
+        <!-- đưởng kẻ ngang <hr> với độ rộng 50%, màu đen, độ dày 5-->
+        <hr width="50%" color="black" size="5">  
+
+        <!-- <br> là thẻ chèn ngắt dòng (Xuống hàng) trong tài liệu -->
+        <p>tao tên là long đại ca, khu tao sống ở chợ miếu nổi nếu m muốn kiếm chuyện m đến gặp tao <br> tên tao là long </p>
+        
+    <!-- CÁC THẺ ĐỊNH DẠNG VĂN BẢN -->
+        
+        <!-- <b> là văn bản in đậm -->
+        <p><b>Đây là văn bản in đậm</b></p>
+
+        <!-- <strong> văn bản có tầm quan trọng cao. Nội dung bên trong thường được in đậm -->
+        <p><strong >Văn bản có tầm quan trọng cao. Nội dung bên trong thường được in đậm</strong></p>
+
+        <!-- <i>: hiển thị bằng chữ nghiêng và <em>: văn bản được nhấn mạnh. Nội dung bên trong thường được hiển thị bằng chữ nghiêng -->
+        <p><i>hiển thị bằng chữ nghiêng</i></p>
+        <p><em>Văn bản được nhấn mạnh. Nội dung bên trong thường được hiển thị bằng chữ nghiêng</em></p>
+
+        <!-- <mark></mark>: phần tử được xác định văn bản được đánh dấu hoặc highlighted -->
+        <p>Do not forget to buy <mark>milk</mark> today. </p>
+
+        <!-- <del></del>: xác định văn bản đã bị xóa. Trình duyệt hiển thị đường gạch qua văn bản -->
+        <p>My favourite color is <del>blue</del> red.</p>
+
+        <!-- <ins>: văn bản đã được chèn vào tài liệu. Trình duyệt hiển thị gạch dưới văn bản được chèn -->
+        <p>My favourite color is <del>blue</del> <ins>red.</ins></p>
+
+        <!-- <sub>: Văn bản chỉ số xuất hiện bên dưới dòng bình thường và font chữ nhỏ hơn -->
+        <p>This is <sub>subscripted</sub> text.</p>
+
+        <!-- <sup>: Văn bản được hiển thị trên dòng bình thường, font chữ nhỏ hơn -->
+        <p>This is <sup>superscripted</sup> text.</p>
+
+    <!-- CÁC PHẦN TỬ TRÍCH DẪN - HTML QUOTATION -->
+
+        <!-- <blockquote>:Xác định một phần tử được trích dẫn từ một nguồn khác -->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+        <!-- <q>:Một trích dẫn ngắn. Nội dung đặt trong dấu ngoặc kép -->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- <abbr>: viết tắt hoặc từ viết tắt, như "HTML","CSS" -->
+        <p>The <abbr title="World Health Organazation">WHO</abbr>was founded in 1948.</p>
+
+        <!-- <address>: xác định thông tin liên hệ tác giả/ chủ sở hữu của tài liệu, có thể là email, URL, điện thoại -->
+        <address>
+            Written by John Doe. <br>
+            Visit us at: <br>
+            Example.com <br>
+            Box 564, DisneyLand <br>
+            USA
+        </address>
+
+        <!-- <cite>: xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: Một cuốn sách, một bài thơ, một bài hát, một bộ phim...). Văn bản được in nghiêng -->
+        <hr width="50%" size="6" color="black">
+        <cite>The Scream</cite> by Edvard Munch. Painted in 1893. <br>
+        <hr width="50%" size="6" color="black">
+
+    <!-- HTML LINKS  -->
+        <!-- target: thuộc tính xác định nơi mở tài liệu
+            - _self: mặc đinh. Mở tài liệu ở tab hiện tại
+            - _blank: mở tài liệu trong tab mới 
+            - title: mô tả cho element-->
+        <a href="https://www.google.com.vn/?hl=vi" target="_blank" title="Đây là link sang trang Google.com" >nhấp vào đây</a>
+        <a href="mailto:lyhoangnghiem3432@gmail.com" target="_self">Chọn mail</a>
+        
+        <!-- Thẻ <img>: chèn ảnh
+            - src: chèn đường dẫn địa chỉ của hình ảnh
+            - alt:  Văn bản thay thế cho hình ảnh, hiển thị đường dẫn ảnh bị lỗi-->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7F4U3rq1yoMqLUAUZJaFxE5Sv7HZ7hDi8-Q&s" alt="Đây là hình ảnh về chủ đề..">
+        <!-- Kết hợp thẻ <a> và <img> -->
+        <a href="https://www.google.com.vn/?hl=vi">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7F4U3rq1yoMqLUAUZJaFxE5Sv7HZ7hDi8-Q&s" id="hinh1">
+        </a>
+
+        <a href="../HTML/BT1.html" >
+            <img src="../IMAGES/hinh-nen-dien-thoai-dep.jpg" alt="">
+        </a>
+        <br>
+        <img src="../IMAGES/hinh-nen-may-tinh-1-696x464.jpg" alt="fdg" usemap="#lienket">
+        <map name="lienket">
+            <area shape="circle" coords="335,245,10" href="../HTML/BT1.html" alt="hihi">
+            <area shape="rect" coords="135,115, 336, 166 " href="../HTML/BT1.html" alt="ohno" >
+            
+            <area shape="poly" coords="489,259,416,374,526,404,627,297,489,259" href="../HTML/BT1.html" alt="">
+        </map>
+        <!-- Thẻ video
+        - type: 
+        - controls: thêm bộ điều khiển video -->
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video> 
+        <!-- Thẻ audio -->
+        <audio  controls="controls">
+            <source src="../nhac" type="audio/mp3">
+        </audio>
+      
+       
+
+        
+    <!-- DANH SÁCH -->
+        <!-- Không thứ tự -->
+        <ul style="list-style-type: circle ;">
+            <li>A Long</li>
+            <li>B Long</li>
+            <li>C Long</li>
+            <li>D Long</li>
+        </ul>
+        <!-- Có thứ tự -->
+        <ol type="I">
+            <ul>
+                <li>toi la long</li>
+                <li>toi la long</li>
+                <li>toi la long</li>
+                <li>toi la long</li>
+            </ul>
+            <li>Long</li>
+            <li>Long</li>
+            <li>Long</li>
+        </ol>
+          <!-- Định nghĩa -->
+          <div>
+            <DL>
+                <DT>Pixel
+                <DD> Short for picture element. A pixel refers to the small dots that make up an image on the screen. Pixel depth refers to the number of colours which may be displayed.
+                <DT>Resolution
+                <DD>The quality of the <span>display</span>  on a monitor. The higher the resolution, the sharper the image. The number of pixels that can be displayed on a screen defines resolution.
+                <DT>Scanner
+                <DD> A hardware device that allows the user to make electronic copies of graphics or text.
+            </DL>
+        </div>
+
+    </body>
+</html>
